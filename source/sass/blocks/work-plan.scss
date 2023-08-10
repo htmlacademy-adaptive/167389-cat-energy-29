@@ -1,0 +1,61 @@
+.work-plan__title {
+  color: #000000;
+  text-align: left;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  line-height: 40px;
+  margin: 0;
+  padding-bottom: 40px;
+  font-weight: 400;
+}
+
+.work-plan__list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 49px;
+  list-style: none;;
+}
+
+.work-plan__item {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  line-height: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+}
+
+.work-plan__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.work-plan__image {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--sheet {
+    background-image: url("../../img/icon_sheet.svg");
+  }
+
+  &--tube {
+    background-image: url("../../img/icon_tube.svg");
+  }
+
+  &--eat {
+    background-image: url("../../img/icon_eat.svg");
+  }
+
+  &--watch {
+    background-image: url("../../img/icon_watch.svg");
+  }
+}
+
+.work-plan__text {
+  margin: 0;
+}
+

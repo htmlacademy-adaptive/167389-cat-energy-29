@@ -1,0 +1,76 @@
+.custom-elements__item {
+  position: relative;
+  display: flex;
+}
+
+.custom-elements__label {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px 15px 10px 45px;
+}
+
+.custom-elements__item:not(:first-child),
+.custom-elements__item:not(:first-child) {
+  margin-top: 13px;
+}
+
+.custom-elements__radiobutton,
+.custom-elements__checkbox {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.custom-elements__radiobutton + .custom-elements__label::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+.custom-elements__radiobutton:checked + .custom-elements__label::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: #68b738;
+  top: 9px;
+  left: 9px;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.custom-elements__checkbox + .custom-elements__label::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+}
+
+.custom-elements__checkbox:checked + .custom-elements__label::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 26px;
+  background-image: url("../../img/tick.svg");
+  background-color: #ffffff;
+  top: 4px;
+  left: 4px;
+  z-index: 5;
+}

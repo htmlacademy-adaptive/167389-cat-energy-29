@@ -1,0 +1,14 @@
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-header__link {
+  display: flex;
+  padding: 13px 20px;
+}
+
+.main-header__logo--text{
+  margin-left: 56px;
+}
