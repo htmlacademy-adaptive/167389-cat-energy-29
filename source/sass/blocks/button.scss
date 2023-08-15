@@ -1,0 +1,55 @@
+.button {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background-color: #68b738;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 0;
+  display: flex;
+  text-decoration: none;
+  cursor: pointer;
+  min-height: 40px;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #8ec36d;
+    background-color: #5eaa2f;
+  }
+}
+
+.button--promo {
+  width: 100%;
+  margin-top: 138px;
+}
+
+.button--search-form {
+  width: 100%;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.button--catalog {
+  width: 100%;
+  margin-top: 17px;
+}
+
+.button--empty {
+  margin-top: 21px;
+  background-color: #f2f2f2;
+  color: #444444;
+}
+
+.button--subcatalog {
+  width: 100%;
+  margin-top: 12px;
+}
