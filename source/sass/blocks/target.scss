@@ -7,3 +7,26 @@
   grid-template-rows: repeat(2, auto);
   gap: 20px;
 }
+
+@media (min-width: 768px) {
+  .target {
+    padding: 0 0 45px 0;
+  }
+
+  .target__wrapper {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .target {
+    padding: 82px 0 71px;
+  }
+
+  .target__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+  }
+}

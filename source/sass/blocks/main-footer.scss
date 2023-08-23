@@ -1,9 +1,9 @@
 .main-footer {
   display: flex;
   flex-direction: column;
-  padding: 20px 0;
   text-align: center;
   background-color: #f2f2f2;
+  padding: 0 20px;
 }
 
 .main-footer__logo {
@@ -49,4 +49,42 @@
   content: "";
   top: 0;
   left: 0;
+}
+
+@media (min-width: 768px) {
+  .main-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 30px;
+  }
+
+  .main-footer__logo {
+    padding: 0;
+    width: auto;
+  }
+
+  .main-footer__logo-name {
+    width: 128px;
+    height: 24px;
+  }
+
+  .main-footer__logo::after {
+    display: none;
+  }
+
+  .main-footer__copyright {
+    padding: 0;
+    width: 168px;
+  }
+
+  .main-footer__copyright::before {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-footer {
+    padding: 51px 110px;
+  }
 }

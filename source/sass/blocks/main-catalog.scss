@@ -8,3 +8,17 @@
   margin: 0;
   padding: 27px 0 41px;
 }
+
+@media (min-width: 768px) {
+  .main-catalog__title {
+    padding: 45px 30px 165px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-catalog__title {
+    padding: 49px 110px 165px;
+  }
+}

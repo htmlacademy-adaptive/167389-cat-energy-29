@@ -4,6 +4,10 @@
   padding: 20px 20px 25px 20px;
   border-bottom: 1px solid #ebebeb;
   text-align: center;
+
+  &--empty {
+    max-width: 284px;
+  }
 }
 
 .product:first-child {
@@ -68,5 +72,117 @@
 
   &--empty {
     justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .product {
+    flex-direction: column;
+    padding: 10px 37px 40px;
+    width: 250px;
+    border-bottom: 0;
+    align-items: center;
+    background-color: rgba(242, 242, 242, 1);
+    position: relative;
+
+    &--empty {
+      border: 2px solid #f2f2f2;
+      width: 246px;
+      background-color: #ffffff;
+    }
+  }
+
+  .product:first-child {
+    border-top: none;
+  }
+
+  .product__image-container {
+    width: 200px;
+    height: 210px;
+    position: absolute;
+    top: -70px;
+    left: 62px;
+  }
+
+  .product__image {
+    width: auto;
+    height: auto;
+  }
+
+  .product__info {
+    width: 100%;
+  }
+
+  .product__title {
+    font-size: 20px;
+    line-height: 24px;
+    width: 60%;
+    text-align: center;
+    padding: 151px 0 12px;
+    margin: 0 auto;
+
+    &--empty {
+      padding: 150px 0 18px;
+    }
+
+    &--empty::before {
+      width: 60px;
+      height: 60px;
+      top: 39px;
+      left: 44px;
+      background-image: url("../img/plus-tablet.svg");
+    }
+  }
+
+  .product__details {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 5px;
+    padding-top: 7px;
+    border-bottom: 1px solid #cdcdcd;
+
+    &--empty {
+      width: auto;
+      padding: 0 40px;
+      border-bottom: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .product {
+    padding: 0 38px 40px;
+    width: 169px;
+
+    &--empty {
+      width: 169px;
+      padding: 10px 36px 40px;
+    }
+  }
+
+  .product__image-container {
+    left: 25px;
+  }
+
+  .product__title {
+    width: 80%;
+    padding-bottom: 18px;
+
+    &--empty {
+      padding: 140px 0 15px;
+    }
+
+    &--empty::before {
+      left: 40px;
+    }
+  }
+
+  .product__details--empty {
+    padding: 0;
+  }
+
+  .product__details {
+    padding-bottom: 5px;
+    padding-top: 6px;
   }
 }

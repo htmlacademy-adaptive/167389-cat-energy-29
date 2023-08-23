@@ -28,8 +28,8 @@
 }
 
 .button--promo {
-  width: 100%;
-  margin-top: 138px;
+  margin: 0 20px;
+  box-sizing: border-box;
 }
 
 .button--search-form {
@@ -52,4 +52,51 @@
 .button--subcatalog {
   width: 100%;
   margin-top: 12px;
+}
+
+@media (min-width: 768px) {
+  .button--promo {
+    width: 244px;
+    margin-left: 120px;
+    margin-top: 50px;
+    margin-bottom: 526px;
+    min-height: 55px;
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .button--catalog {
+    margin-top: 30px;
+  }
+
+  .button--empty {
+    margin-top: 82px;
+  }
+
+  .button--subcatalog {
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .button--promo {
+    margin-left: 190px;
+    margin-bottom: 184px;
+  }
+
+  .button--catalog {
+    margin-top: 35px;
+  }
+
+  .button--empty {
+    margin-top: 85px;
+  }
+
+  .button--subcatalog {
+    width: 244px;
+    margin: 0;
+    margin-left: 40px;
+  }
 }

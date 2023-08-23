@@ -12,3 +12,29 @@
 .main-header__logo--text {
   margin-left: 56px;
 }
+
+@media (min-width: 768px) {
+  .main-header {
+    align-items: center;
+    padding: 25px 34px 25px 30px;
+  }
+
+  .main-header__link {
+    padding: 0;
+    align-items: center;
+  }
+
+  .main-header__logo--text {
+    margin-left: 13px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-header {
+    padding: 55px 110px 32px;
+  }
+
+  .main-header__logo--text {
+    margin-left: 14px;
+  }
+}
