@@ -1595,7 +1595,7 @@
   .search-form__list .search-form__item {
     width: 570px;
   }
-  .search-form__list .search-form__item:not(:last-child) {
+  .search-form__list .search-form__item--email {
     margin: 0;
   }
 
