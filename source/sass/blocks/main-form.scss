@@ -22,12 +22,24 @@
   .main-form__title {
     font-size: 60px;
     line-height: 60px;
-    padding: 40px 70px 64px;
+    padding: 35px 70px 54px;
   }
 
   .main-form__text {
     font-size: 20px;
     line-height: 30px;
     padding: 0 70px 66px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-form__title {
+    padding-left: 110px;
+    padding-bottom: 56px;
+  }
+
+  .main-form__text {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }

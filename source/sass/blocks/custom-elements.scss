@@ -88,22 +88,67 @@
 }
 
 @media (min-width: 768px) {
+  .custom-elements__label {
+    font-size: 20px;
+    line-height: normal;
+    padding: 5px 15px 5px 60px;
+  }
+
+  .custom-elements__radiobutton + .custom-elements__label::before {
+    width: 39px;
+    height: 39px;
+  }
+
+  .custom-elements__radiobutton:checked + .custom-elements__label::after {
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 10px;
+  }
+
+  .custom-elements__checkbox + .custom-elements__label::before {
+    width: 39px;
+    height: 39px;
+    top: -1px;
+  }
+
+  .custom-elements__checkbox:checked + .custom-elements__label::after {
+    top: 7px;
+    left:7px;
+    background-image: url("../img/tick-tablet.svg");
+  }
+
+  .custom-elements--checkbox .custom-elements__item {
+    margin: 0;
+  }
+  
+
   .custom-elements--rbt {
     padding: 23px 27px 27px;
-    margin: 72px 70px 39px;
+    margin: 72px 40px 65px;
     border: 1px solid #d9d9d9;
   }
 
   .custom-elements--checkbox {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    gap: 32px 80px;
+    padding: 57px 40px 52px;
+    padding-bottom: 60px;
   }
 }
 
 @media (min-width: 1200px) {
+  .custom-elements--rbt {
+    flex-grow: 1;
+    margin: 0;
+    min-width: 572px;
+    padding: 25px 28px;
+  }
+
   .custom-elements--checkbox {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 80px;
   }
 }

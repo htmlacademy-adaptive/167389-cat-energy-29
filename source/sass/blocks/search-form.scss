@@ -112,6 +112,12 @@
   border: 1px solid #e7e7e7;
 }
 
+.search-form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .search-form__footnote {
   text-align: center;
   font-family: "Lato", sans-serif;
@@ -127,6 +133,19 @@
     line-height: 36px;
   }
 
+  .search-form__title::before {
+    top: 21px;
+  }
+
+  .search-form__title-br {
+    display: none;
+  }
+
+  .search-form__group {
+    padding: 0 30px;
+  }
+  
+
   .search-form__item,
   .search-form__label,
   .search-form__text,
@@ -136,7 +155,7 @@
   }
 
   .search-form__list {
-    padding: 0 70px;
+    padding: 0 40px;
 
     &--human {
       padding-top: 76px;
@@ -145,7 +164,7 @@
   }
 
   .search-form__text {
-    padding: 11px 20px;
+    padding: 10px 19px;
   }
 
   .search-form__item:not(:last-child) {
@@ -154,15 +173,71 @@
 
   .search-form__textarea {
     display: flex;
-    margin: 86px 70px 65px;
+    margin: 86px 40px 65px;
+    padding: 11px 20px;
     min-width: 628px;
+    min-height: 175px;
     flex-grow: 1;
+  }
+
+  .search-form__button-wrapper {
+    padding: 0 70px 60px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .search-form__footnote {
+    padding: 0;
   }
 }
 
 @media (min-width: 1200px) {
+  .search-form__group {
+    padding: 0 70px;
+  }
   .search-form__group--cat {
-    font-display: flex;
+    display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0 110px 70px;
+    gap: 80px;
+  }
+
+  .search-form__list {
+    padding: 0 40px;
+    
+    &--cat {
+      flex-grow: 1;
+      padding: 0;
+    }
+
+    &--human {
+      padding-top: 76px;
+      padding-bottom: 70px;
+      display: flex;
+      gap: 80px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    .search-form__item {
+      width: 570px;
+    }
+
+    .search-form__item:not(:last-child) {
+      margin: 0;
+    }
+  }
+
+  .search-form__textarea {
+    margin-top: 78px;
+    margin-bottom: 70px;
+    min-width: 1220px;
+    padding: 9px 20px;
+  }
+
+  .search-form__button-wrapper {
+    padding: 0 110px 79px;
   }
 }

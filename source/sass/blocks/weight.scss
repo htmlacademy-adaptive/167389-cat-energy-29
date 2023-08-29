@@ -1,6 +1,40 @@
 .weight {
   padding: 30px 33px 18px 20px;
   background-color: #f2f2f2;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #68b738;
+    top: 24px;
+    left: 20px;
+  }
+}
+
+.weight--loss::after {
+  position: absolute;
+  content: "";
+  top: 21px;
+  left: 27px;
+  width: 36px;
+  height: 50px;
+  background-image: url("../../img/cat-slim-mobile.svg");
+  z-index: 5;
+}
+
+.weight--gain::after {
+  position: absolute;
+  content: "";
+  top: 35px;
+  left: 13px;
+  width: 67px;
+  height: 28px;
+  background-image: url("../../img/cat-pro-mobile.svg");
+  z-index: 5;
 }
 
 .weight__title {
@@ -20,6 +54,7 @@
 .weight__text {
   margin: 0;
   padding: 0;
+  line-height: 18px;
   padding-bottom: 23px;
   position: relative;
   font-family: "Lato", sans-serif;
@@ -47,13 +82,55 @@
   cursor: pointer;
   display: block;
   text-align: left;
-  padding: 4px 15px 4px 0;
+  padding: 4px 47px 4px 0;
+  width: fit-content;
+  position: relative;
+}
+
+.weight__link::after {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  content: "";
+  background-image: url("../../img/icon_arrow.svg");
+  width: 32px;
+  height: 10px;
+}
+
+.weight__link:hover::after {
+  background-image: url("../../img/icon_arrow-big.svg");
 }
 
 @media (min-width: 768px) {
   .weight {
     padding: 77px 316px 53px 52px;
     text-align: left;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 92px;
+      left: auto;
+      right: 63px;
+    }
+  }
+
+  .weight--loss::after {
+    top: 81px;
+    left: auto;
+    right: 93px;
+    width: 140px;
+    height: 194px;
+    background-image: url("../../img/cat-slim-tablet.svg");
+  }
+  
+  .weight--gain::after {
+    top: 135px;
+    left: auto;
+    right: 28.87px;
+    width: 268px;
+    height: 112px;
+    background-image: url("../../img/cat-pro-tablet.svg");
   }
 
   .weight__title {
@@ -74,12 +151,39 @@
   .weight__link {
     margin-top: 0;
     font-size: 20px;
+    padding-right: 57px;
   }
 }
 
 @media (min-width: 1200px) {
   .weight {
     padding: 77px 61px 55px 52px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      right: auto;
+      top: 47px;
+      left: 52px;
+    }
+  }
+
+  .weight--loss::after {
+    top: 41px;
+    left: 67px;
+    right: auto;
+    width: 70px;
+    height: 97px;
+    background-image: url("../../img/cat-slim-desktop.svg");
+  }
+  
+  .weight--gain::after {
+    top: 67px;
+    left: 33px;
+    right: auto;
+    width: 134px;
+    height: 56px;
+    background-image: url("../../img/cat-pro-desktop.svg");
   }
 
   .weight__title {

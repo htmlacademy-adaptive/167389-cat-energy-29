@@ -9,7 +9,7 @@
   width: 100%;
   height: 2px;
   background-color: #68b738;
-  top: 15px;
+  top: 21px;
   right: 0;
   z-index: -20;
 }
@@ -189,16 +189,16 @@
   .sub-catalog__list {
     padding: 0 40px;
     border: none;
-    min-width: 795px;
+    min-width: 895px;
   }
 
   .sub-catalog__item {
     text-align: left;
-    padding: 15px 0 17px;
+    padding: 14px 0 17px 1px;
   }
 
   .sub-catalog__item-title {
-    width: 305px;
+    width: 325px;
   }
 
   .sub-catalog__details {
@@ -206,18 +206,18 @@
   }
 
   .sub-catalog__price {
-    width: 52px;
     margin: 0;
+    width: 62px;
     text-align: left;
+    padding-left: auto;
   }
 
   .sub-catalog__action {
     background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/action-image-desktop.png");
-    height: 288px;
+    height: auto;
     flex-direction: column;
     margin: 0;
-    padding: 0;
-    justify-content: center;
+    padding: 56px 0 43px;
     align-self: center;
     width: 245px;
     gap: 46px;
