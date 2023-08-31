@@ -144,7 +144,6 @@
   .search-form__group {
     padding: 0 30px;
   }
-  
 
   .search-form__item,
   .search-form__label,
@@ -196,6 +195,7 @@
   .search-form__group {
     padding: 0 70px;
   }
+
   .search-form__group--cat {
     display: flex;
     flex-direction: row;
@@ -206,7 +206,7 @@
 
   .search-form__list {
     padding: 0 40px;
-    
+
     &--cat {
       flex-grow: 1;
       padding: 0;

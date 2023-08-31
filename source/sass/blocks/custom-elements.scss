@@ -114,14 +114,13 @@
 
   .custom-elements__checkbox:checked + .custom-elements__label::after {
     top: 7px;
-    left:7px;
+    left: 7px;
     background-image: url("../img/tick-tablet.svg");
   }
 
   .custom-elements--checkbox .custom-elements__item {
     margin: 0;
   }
-  
 
   .custom-elements--rbt {
     padding: 23px 27px 27px;

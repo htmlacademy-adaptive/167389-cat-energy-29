@@ -103,7 +103,7 @@
 
 @media (min-width: 768px) {
   .weight {
-    padding: 77px 316px 53px 52px;
+    padding: 77px 316px 58px 52px;
     text-align: left;
 
     &::before {
@@ -123,7 +123,7 @@
     height: 194px;
     background-image: url("../../img/cat-slim-tablet.svg");
   }
-  
+
   .weight--gain::after {
     top: 135px;
     left: auto;
@@ -141,7 +141,8 @@
   }
 
   .weight__text {
-    padding-bottom: 52px;
+    padding-bottom: 55px;
+    line-height: 24px;
   }
 
   .weight__text::after {
@@ -157,7 +158,8 @@
 
 @media (min-width: 1200px) {
   .weight {
-    padding: 77px 61px 55px 52px;
+    padding: 76px 61px 55px 52px;
+    min-width: 457px;
 
     &::before {
       width: 100px;
@@ -176,7 +178,7 @@
     height: 97px;
     background-image: url("../../img/cat-slim-desktop.svg");
   }
-  
+
   .weight--gain::after {
     top: 67px;
     left: 33px;
@@ -192,6 +194,6 @@
   }
 
   .weight__text {
-    padding-bottom: 27px;
+    padding-bottom: 30px;
   }
 }

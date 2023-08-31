@@ -60,6 +60,10 @@
   color: #444444;
 }
 
+.work-plan__br {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .work-plan__title {
     font-size: 60px;
@@ -72,9 +76,9 @@
     flex-wrap: wrap;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 37px 154px;
+    gap: 37px 133px;
     padding-bottom: 92px;
-    padding-right: 89px;
+    padding-right: 75px;
   }
 
   .work-plan__item {
@@ -86,15 +90,15 @@
     counter-increment: number;
   }
 
-  .work-plan__item::before{
+  .work-plan__item::before {
     font-family: "Oswald", sans-serif;
     content: counter(number);
     position: absolute;
     font-size: 280px;
     color: #f2f2f2;
     z-index: -1;
-    top: 130px;
-    left: 118px;
+    top: 131px;
+    left: 115px;
   }
 
   .work-plan__item:not(:last-child) {
@@ -104,12 +108,18 @@
   .work-plan__image {
     margin-top: 40px;
     margin-bottom: 31px;
+    width: 80px;
+    height: 80px;
   }
 
   .work-plan__text {
-    margin-right: 26px;
+    margin-right: 2px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .work-plan__br {
+    display: block;
   }
 }
 
@@ -117,7 +127,7 @@
   .work-plan__list {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    gap: 37px 97px;
+    gap: 0 78px;
     padding-bottom: 69px;
     padding-right: 0;
   }
