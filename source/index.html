@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
+    <link rel="apple-icon" href="/source/img/favicons/apple-icon.png" type="image/png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page-container">
@@ -115,8 +119,8 @@
         <div class="example__slider slider">
           <div class="slider__wrapper slider__wrapper--before">
             <picture>
-              <source media="(min-width: 768px)" srcset="./img/cat-before-tablet@1x.png">
-              <img class="slider__img slider__img--before" src="./img/cat-before@1x.png" alt="Толстенький котик">
+              <source media="(min-width: 768px)" srcset="./img/cat-before-tablet@1x.png 1x, ./img/cat-before-tablet@2x.png 2x">
+              <img class="slider__img slider__img--before" src="./img/cat-before@1x.png" srcset="./img/cat-mobile-before@2x.png 2x" alt="Толстенький котик">
             </picture>
           </div>
           <div class="slider__buttons">
@@ -127,8 +131,8 @@
           </div>
           <div class="slider__wrapper slider__wrapper--after">
             <picture>
-              <source media="(min-width: 768px)" srcset="./img/cat-after-tablet@1x.png">
-              <img class="slider__img slider__img--after" src="./img/cat-after@1x.png" alt="Похудевший котик">
+              <source media="(min-width: 768px)" srcset="./img/cat-after-tablet@1x.png 1x, ./img/cat-after-tablet@2x.png 2x">
+              <img class="slider__img slider__img--after" src="./img/cat-after@1x.png" srcset="./img/cat-after@2x.png 2x" alt="Похудевший котик">
             </picture>
           </div>
         </div>
