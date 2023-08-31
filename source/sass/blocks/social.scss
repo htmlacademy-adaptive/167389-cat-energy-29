@@ -12,6 +12,16 @@
 
 .social__link {
   display: block;
-  padding: 20px;
+  padding: 20px 10px 16px;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .social__list {
+    margin-left: 40px;
+  }
+
+  .social__link {
+    padding: 23px 10px 21px;
+  }
 }

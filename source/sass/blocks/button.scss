@@ -8,7 +8,7 @@
   align-items: center;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
   border: 0;
   display: flex;
@@ -30,6 +30,8 @@
 .button--promo {
   margin: 0 20px;
   box-sizing: border-box;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .button--search-form {
@@ -47,6 +49,11 @@
   margin-top: 21px;
   background-color: #f2f2f2;
   color: #444444;
+
+  &:hover,
+  :active {
+    background-color: #ebebeb;
+  }
 }
 
 .button--subcatalog {
@@ -78,12 +85,20 @@
     width: 100%;
     margin-top: 25px;
   }
+
+  .button--search-form {
+    width: 284px;
+    margin-right: 60px;
+    font-size: 20px;
+    line-height: 26px;
+    min-height: 54px;
+  }
 }
 
 @media (min-width: 1200px) {
   .button--promo {
     margin-left: 190px;
-    margin-bottom: 184px;
+    margin-bottom: 185px;
   }
 
   .button--catalog {
@@ -97,6 +112,11 @@
   .button--subcatalog {
     width: 244px;
     margin: 0;
-    margin-left: 40px;
+    margin-left: 20px;
+  }
+
+  .button--search-form {
+    min-width: 570px;
+    margin-right: 80px;
   }
 }

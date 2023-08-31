@@ -12,7 +12,7 @@
         <h1 class="main-header__title visually-hidden">Cat Energy</h1>
         <picture>
           <source media="(min-width: 1200px)" srcset="./img/logo-header-desktop.svg">
-          <source media="(mix-width: 768px)" srcset="./img/logo-header-tablet.svg">
+          <source media="(min-width: 768px)" srcset="./img/logo-header-tablet.svg">
           <img class="main-header__logo" src="./img/logo-mobile.svg" alt="Картинка логотипа Cat Energy">
         </picture>
         <picture>
@@ -21,14 +21,14 @@
           <img class="main-header__logo main-header__logo--text" src="./img/logo_text_header.svg" alt="Текст логотипа Cat Energy">
         </picture>
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--close" type="button">
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Open Menu</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--other" href="#">Главная</a>
+              <a class="main-nav__link main-nav__link--other main-nav__link--active main-nav__link--other-active" href="#">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--other" href="./catalog.html">Каталог продукции</a>
@@ -89,7 +89,7 @@
             </li>
             <li class="work-plan__item">
               <span class="work-plan__image work-plan__image--watch"></span>
-              <p class="work-plan__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="work-plan__text">Уже через месяц наслаждайтесь изменениями к лучшему<br class="work-plan__br"> вашего питомца!</p>
             </li>
           </ul>
         </div>
@@ -97,36 +97,40 @@
       <section class="example">
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
-          <p class="exapmle__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
           <div class="example__elements">
             <div class="example__result">
               <dl class="example__results">
-                <dt class="example__results-title">снижение веса</dt>
+                <dt class="example__results-title">снижение<br class="example__results-br"> веса</dt>
                 <dd class="example__results-description">5 КГ</dd>
               </dl>
               <dl class="example__results">
-                <dt class="example__results-title">затрачено времени</dt>
+                <dt class="example__results-title">затрачено<br class="example__results-br"> времени</dt>
                 <dd class="example__results-description">60 дней</dd>
               </dl>
             </div>
-            <p class="example__price">Затраты на питание:<br class="example__br"> 15 000 РУБ.</p>
+            <p class="example__price">Затраты на питание:<span class="example__price-money"> 15 000 РУБ.</span></p>
           </div>
         </div>
         <div class="example__slider slider">
-          <picture>
-            <source media="(min-width: 768px)" srcset="./img/cat-before-tablet@1x.png">
-            <img class="example__slider-before" src="./img/cat-before@1x.png" alt="Толстенький котик">
-          </picture>
-          <picture>
-            <source media="(min-width: 768px)" srcset="./img/cat-after-tablet@1x.png">
-            <img class="example__slider-after" src="./img/cat-after@1x.png" alt="Похудевший котик">
-          </picture>
-          <svg class="example__slider-button" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <rect x="1" y="1" width="38" height="38" rx="19" fill="white"/>
-            <path d="M16 11L8 20L16 29V11Z" fill="#666666"/>
-            <path d="M32 20L24 11V29L32 20Z" fill="#666666"/>
-            <rect x="1" y="1" width="38" height="38" rx="19" stroke="#666666" stroke-width="2"/>
-          </svg>
+          <div class="slider__wrapper slider__wrapper--before">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/cat-before-tablet@1x.png">
+              <img class="slider__img slider__img--before" src="./img/cat-before@1x.png" alt="Толстенький котик">
+            </picture>
+          </div>
+          <div class="slider__buttons">
+            <svg class="slider__button" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="currentColor">
+              <path d="M16 11L8 20L16 29V11Z"/>
+              <path d="M32 20L24 11V29L32 20Z"/>
+            </svg>
+          </div>
+          <div class="slider__wrapper slider__wrapper--after">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/cat-after-tablet@1x.png">
+              <img class="slider__img slider__img--after" src="./img/cat-after@1x.png" alt="Похудевший котик">
+            </picture>
+          </div>
         </div>
       </section>
       <section class="contacts">
@@ -137,16 +141,19 @@
             <span class="contacts__address-town">Санкт-Петербург</span>
           </p>
         </div>
-        <picture>
-          <source media="(min-width: 1200px)" srcset="./img/map-desktop.png">
-          <source media="(min-width: 768px)" srcset="./img/map-tablet.png">
-          <img class="contacts__map" src="./img/map.png" alt="Мы на карте">
-        </picture>
+        <div class="contacts__map">
+          <iframe class="contacts__map-online" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.2153490911187!2d30.320300815815674!3d59.938651982615674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1692796699457!5m2!1sru!2sru" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/map-desktop.png">
+            <source media="(min-width: 768px)" srcset="./img/map-tablet.png">
+            <img class="contacts__map--offline" src="./img/map.png" alt="Мы на карте">
+          </picture>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
       <a class="main-footer__logo logo logo--footer" href="#">
-        <img class="main-footer__logo-name" width="101" height="18" alt="Кот Энерджи" src="./img/logo_text__footer.svg">
+        <img class="main-footer__logo-name" width="128" height="24" alt="Кот Энерджи" src="./img/logo_text__footer.svg">
       </a>
       <div class="main-footer__social social">
         <ul class="social__list">
@@ -189,5 +196,6 @@
         </svg>
       </a>
     </footer>
+    <script src="../js/script.js"></script>
   </body>
 </html>
