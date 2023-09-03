@@ -43,14 +43,18 @@
     padding: 0;
   }
 
-  .main-nav--nojs .main-nav__item {
-    display: block;
-    z-index: 60;
-  }
-
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
+
+  .main-nav--nojs {
+    position: static;
+    min-height: 0;
+  }
+
+  // .main-nav--nojs .main-nav__item {
+  //   display: block;
+  // }
 
   .main-nav--closed .main-nav__toggle {
     background-image: url("../../img/open-menu_mobile.svg");
@@ -72,6 +76,10 @@
     transform: translateX(100%);
     transition: 1s;
     overflow-x: hidden;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    display: block;
   }
 
   .main-nav--opened .main-nav__list {

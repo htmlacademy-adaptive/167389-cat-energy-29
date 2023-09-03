@@ -25,7 +25,7 @@
           <img class="main-header__logo main-header__logo--text" src="./img/logo_text_header.svg" alt="Текст логотипа Cat Energy">
         </picture>
       </a>
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Open Menu</span>
         </button>
@@ -51,9 +51,9 @@
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <picture>
-            <source media="(min-width: 1200px)" srcset="./img/promo-desktop.png">
-            <source media="(min-width: 768px)" srcset="./img/promo-tablet.png">
-            <img class="promo__image" src="./img/promo.png" alt="Контейнер с питанием">
+            <source media="(min-width: 1200px)" srcset="./img/promo-desktop.png 1x, ./img/promo-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./img/promo-tablet.png 1x, ./img/promo-tablet@2x.png 2x">
+            <img class="promo__image" src="./img/promo.png" srcset="./img/promo.png 1x, ./img/promo@2x.png 2x" alt="Контейнер с питанием">
           </picture>
         </div>
         <a class="promo__button button button--promo container" href="#">Подобрать программу</a>
@@ -120,7 +120,7 @@
           <div class="slider__wrapper slider__wrapper--before">
             <picture>
               <source media="(min-width: 768px)" srcset="./img/cat-before-tablet@1x.png 1x, ./img/cat-before-tablet@2x.png 2x">
-              <img class="slider__img slider__img--before" src="./img/cat-before@1x.png" srcset="./img/cat-mobile-before@2x.png 2x" alt="Толстенький котик">
+              <img class="slider__img slider__img--before" src="./img/cat-before@1x.png" srcset="./img/cat-before@1x.png 1x, ./img/cat-mobile-before@2x.png 2x" alt="Толстенький котик">
             </picture>
           </div>
           <div class="slider__buttons">
@@ -132,7 +132,7 @@
           <div class="slider__wrapper slider__wrapper--after">
             <picture>
               <source media="(min-width: 768px)" srcset="./img/cat-after-tablet@1x.png 1x, ./img/cat-after-tablet@2x.png 2x">
-              <img class="slider__img slider__img--after" src="./img/cat-after@1x.png" srcset="./img/cat-after@2x.png 2x" alt="Похудевший котик">
+              <img class="slider__img slider__img--after" src="./img/cat-after@1x.png" srcset="./img/cat-after@1x.png 1x, ./img/cat-after@2x.png 2x" alt="Похудевший котик">
             </picture>
           </div>
         </div>
@@ -200,6 +200,6 @@
         </svg>
       </a>
     </footer>
-    <script src="../js/script.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
