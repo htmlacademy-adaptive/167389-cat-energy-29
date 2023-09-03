@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
+    <link rel="apple-icon" href="/source/img/favicons/apple-icon.png" type="image/png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page-container">
@@ -21,8 +25,8 @@
           <img class="main-header__logo main-header__logo--text" src="./img/logo_text_header.svg" alt="Текст логотипа Cat Energy">
         </picture>
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--close" type="button">
+      <nav class="main-nav main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Open Menu</span>
         </button>
         <div class="main-nav__wrapper">
@@ -182,5 +186,6 @@
         </svg>
       </a>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

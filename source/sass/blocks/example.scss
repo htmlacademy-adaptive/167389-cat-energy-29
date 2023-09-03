@@ -105,7 +105,6 @@
   .example__wrapper {
     background-color: transparent;
     padding: 0 30px;
-    margin-right: 224px;
   }
 
   .example__title {
@@ -143,6 +142,7 @@
     line-height: 14px;
     bottom: -5px;
     background-color: #ffffff;
+    padding: 0 8px;
   }
 
   .example__results-br {
@@ -171,7 +171,7 @@
 @media (min-width: 1272px) {
   .example {
     flex-direction: row;
-    padding: 0 110px;
+    padding: 0 110px 75px;
     justify-content: space-between;
     background-image: linear-gradient(0deg, #eaeaea 462px, #ffffff 42.9%);
   }
@@ -183,7 +183,7 @@
 
   .example__elements {
     flex-direction: column;
-    padding-bottom: 75px;
+    padding-bottom: 0;
   }
 
   .example__title {
