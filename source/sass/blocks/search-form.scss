@@ -69,22 +69,24 @@
   align-items: center;
   position: relative;
 
-  &::before {
+  &--human::before {
     position: absolute;
     content: "";
     width: 20px;
     height: 20px;
     top: 13px;
     right: 13px;
-    background-repeat: no-repeat;
+    
   }
 
   &--email::before {
-    background-image: url("../../img/icon-email.svg");
+    mask-image: url("../../img/sprite.svg#icon-mail");
+    background-color: #000000;
   }
 
   &--phone::before {
-    background-image: url("../../img/icon-phone.svg");
+    mask-image: url("../../img/sprite.svg#icon-phone");
+    background-color: #000000;
   }
 }
 
