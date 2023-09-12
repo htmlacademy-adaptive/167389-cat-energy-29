@@ -15,3 +15,10 @@ navToggle.addEventListener('click', function () {
     navMenu.classList.remove('main-nav--opened');
   }
 });
+
+//карта
+
+const mapOnline = document.querySelector('.contacts__map-online');
+const mapOffline = document.querySelector('.contacts__map-offline');
+mapOnline.style.display = 'block';
+mapOffline.style.display = 'none';

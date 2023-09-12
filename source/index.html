@@ -126,7 +126,12 @@
               <img class="slider__img slider__img--before" src="./img/cat-before@1x.png" srcset="./img/cat-before@1x.png 1x, ./img/cat-mobile-before@2x.png 2x" alt="Толстенький котик">
             </picture>
           </div>
-          <div class="slider__buttons"></div>
+          <div class="slider__buttons">
+            <svg class="slider__button" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="currentColor">
+              <path d="M16 11L8 20L16 29V11Z"/>
+              <path d="M32 20L24 11V29L32 20Z"/>
+            </svg>
+          </div>
           <div class="slider__wrapper slider__wrapper--after">
             <picture>
               <source media="(min-width: 768px)" srcset="./img/cat-after-tablet@1x.png 1x, ./img/cat-after-tablet@2x.png 2x">
@@ -146,9 +151,9 @@
         <div class="contacts__map">
           <iframe class="contacts__map-online" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.2153490911187!2d30.320300815815674!3d59.938651982615674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1692796699457!5m2!1sru!2sru" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <picture>
-            <source media="(min-width: 1200px)" srcset="./img/map-desktop.png">
-            <source media="(min-width: 768px)" srcset="./img/map-tablet.png">
-            <img class="contacts__map--offline" src="./img/map.png" alt="Мы на карте">
+            <source media="(min-width: 1200px)" srcset="./img/map-desktop.png 1x, ./img/map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./img/map-tablet.png 1x, ./img/map-tablet@2x.png 2x">
+            <img class="contacts__map-offline" src="./img/map.png" srcset="./img/map.png 1x, ./img/map@2x.png 2x" alt="Мы на карте">
           </picture>
         </div>
       </section>

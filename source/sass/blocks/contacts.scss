@@ -36,19 +36,19 @@
   position: relative;
 }
 
-.contacts__map--offline {
+.contacts__map-offline {
   width: 100%;
-  height: auto;
+  height: 362px;
   object-fit: cover;
-  z-index: -10;
-  display: none;
+  display: block;
+  position: relative;
 }
 
 .contacts__map-online {
-  display: block;
   position: relative;
   width: 100%;
   height: 362px;
+  display: none;
 }
 
 .contacts__map::before {
@@ -65,7 +65,11 @@
 @media (min-resolution: 2dppx) {
   .contacts__map::before {
     background-image: url("../img/map-pin-mobile@2x.png");
-    background-size: contain;
+    background-size: 57px 53px;
+  }
+
+  .contacts__map-offline {
+    height: 362px;
   }
 }
 
@@ -97,8 +101,12 @@
     height: 400px;
   }
 
+  .contacts__map-offline {
+    height: 400px;
+  }
+
   .contacts__map-online {
-    display: block;
+    display: none;
     width: 100%;
     height: 400px;
   }
@@ -118,7 +126,7 @@
   @media (min-resolution: 2dppx) {
     .contacts__map::before {
       background-image: url("../img/map-pin-tablet@2x.png");
-      background-size: contain;
+      background-size: 113px 106px;
     }
   }
 }
