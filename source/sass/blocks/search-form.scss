@@ -69,29 +69,30 @@
   align-items: center;
   position: relative;
 
-  &::before {
+  &--human::before {
     position: absolute;
     content: "";
     width: 20px;
     height: 20px;
     top: 13px;
     right: 13px;
-    background-repeat: no-repeat;
   }
 
   &--email::before {
-    background-image: url("../../img/icon-email.svg");
+    mask-image: url("../../img/sprite.svg#icon-mail");
+    background-color: #000000;
   }
 
   &--phone::before {
-    background-image: url("../../img/icon-phone.svg");
+    mask-image: url("../../img/sprite.svg#icon-phone");
+    background-color: #000000;
   }
 }
 
 .search-form__text {
   flex-grow: 1;
   flex-shrink: 1;
-  padding: 13px 32px 12px 15px;
+  padding: 13px 15px 12px;
   border: 1px solid #e7e7e7;
 }
 
