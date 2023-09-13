@@ -37,13 +37,15 @@ export const html = () => {
 }
 
 // Scripts
+
 export const script = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
     .pipe(gulp.dest('build/js'));
 }
 
-//Images 
+//Images
+
 export const optimizeImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(squoosh())

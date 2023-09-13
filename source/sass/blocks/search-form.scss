@@ -75,6 +75,7 @@
     width: 20px;
     height: 20px;
     top: 13px;
+    right: 12px;
   }
 
   &--email::before {
@@ -171,6 +172,10 @@
     margin-bottom: 20px;
   }
 
+  .search-form__item--human::before {
+    right: 14px;
+  }
+
   .search-form__textarea {
     display: flex;
     margin: 86px 40px 65px;
@@ -229,6 +234,10 @@
     .search-form__item--email {
       margin: 0;
     }
+  }
+
+  .search-form__item--human::before {
+    right: 16px;
   }
 
   .search-form__textarea {
