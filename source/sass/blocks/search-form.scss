@@ -79,12 +79,12 @@
   }
 
   &--email::before {
-    mask-image: url("../../img/sprite.svg#icon-mail");
+    mask-image: url("../img/sprite.svg#icon-mail");
     background-color: #000000;
   }
 
   &--phone::before {
-    mask-image: url("../../img/sprite.svg#icon-phone");
+    mask-image: url("../img/sprite.svg#icon-phone");
     background-color: #000000;
   }
 }
@@ -111,6 +111,7 @@
   box-sizing: border-box;
   min-height: 150px;
   border: 1px solid #e7e7e7;
+  resize: none;
 }
 
 .search-form__button-wrapper {
