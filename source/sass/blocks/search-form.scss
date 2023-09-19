@@ -95,6 +95,10 @@
   padding: 13px 15px 12px;
   outline: 1px solid #e7e7e7;
 
+  &::placeholder {
+    color: #444444;
+  }
+
   &:hover {
     outline: 1px solid #cdcdcd;
   }
@@ -107,6 +111,20 @@
     opacity: 0.5;
     cursor: none;
   }
+
+  &:invalid {
+    outline: 2px solid #ff8282;
+  }
+}
+
+.search-form__item--email:focus-within::before,
+.search-form__item--phone:focus-within::before {
+  background-color: #68b738;
+}
+
+.search-form__item--email::before:has(.search-form__text:invalid),
+.search-form__item--phone::before:has(.search-form__text:invalid) {
+  background-color: #ff8282;
 }
 
 .search-form__item:not(:last-child) {
