@@ -1,3 +1,8 @@
+.custom-elements__item:disabled {
+  opacity: 0.3;
+  cursor: none;
+}
+
 .custom-elements--rbt {
   padding-top: 22px;
   padding-bottom: 18px;

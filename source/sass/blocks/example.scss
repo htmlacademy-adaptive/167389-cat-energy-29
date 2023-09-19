@@ -40,6 +40,8 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 12px;
+  gap: 32px;
+  margin: 0 auto;
 }
 
 .example__results {
@@ -128,6 +130,7 @@
 
   .example__result {
     justify-content: left;
+    margin: 0;
     gap: 43px;
   }
 

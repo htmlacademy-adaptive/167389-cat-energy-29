@@ -68,11 +68,11 @@
           </ul>
           <ul class="search-form__list custom-elements custom-elements--rbt">
             <li class="custom-elements__item">
-              <input class="custom-elements__radiobutton" id="weight__loss" name="weight" value="weight-loss" type="radio" checked>
+              <input class="custom-elements__radiobutton" disabled id="weight__loss" name="weight" value="weight-loss" type="radio">
               <label class="custom-elements__label" for="weight__loss">Похудение</label>
             </li>
             <li class="custom-elements__item">
-              <input class="custom-elements__radiobutton" id="weight__gain" name="weight" value="weight-gain" type="radio">
+              <input class="custom-elements__radiobutton" id="weight__gain" name="weight" value="weight-gain" type="radio" checked>
               <label class="custom-elements__label" for="weight__gain">Набор массы</label>
             </li>
             <li class="custom-elements__item">
@@ -136,12 +136,12 @@
         <div class="contacts__map">
           <iframe class="contacts__map-online" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.2153490911187!2d30.320300815815674!3d59.938651982615674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1692796699457!5m2!1sru!2sru" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="./img/map-desktop.png 1x, ./img/map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="./img/map-tablet.png 1x, ./img/map-tablet@2x.png 2x">
-            <img class="contacts__map-offline" src="./img/map.png" srcset="./img/map.png 1x, ./img/map@2x.png 2x" alt="Мы на карте">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x" width="1440" height="400">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp 2x" width="768" height="400">
+            <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x" width="320" height="362">
+            <source media="(min-width: 1200px)" srcset="./img/map-desktop.png 1x, ./img/map-desktop@2x.png 2x" width="1440" height="400">
+            <source media="(min-width: 768px)" srcset="./img/map-tablet.png 1x, ./img/map-tablet@2x.png 2x" width="768" height="400">
+            <img class="contacts__map-offline" src="./img/map.png" srcset="./img/map.png 1x, ./img/map@2x.png 2x" alt="Мы на карте" width="320" height="362">
           </picture>
         </div>
       </section>
@@ -149,7 +149,7 @@
     </main>
     <footer class="main-footer">
       <a class="main-footer__logo logo logo--footer" href="#">
-        <img class="main-footer__logo-name" width="128" height="24" alt="Кот Энерджи" src="./img/logo_text__footer.svg">
+        <img class="main-footer__logo-name" width="128" height="24" alt="Кот Энерджи" src="./img/logo_text__footer.svg" width="128" height="24">
       </a>
       <div class="main-footer__social social">
         <ul class="social__list">

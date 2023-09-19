@@ -12,6 +12,14 @@
   width: 100%;
   cursor: pointer;
   position: relative;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-footer__logo::after {

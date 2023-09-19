@@ -19,12 +19,12 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="./img/logo-header-desktop.svg">
           <source media="(min-width: 768px)" srcset="./img/logo-header-tablet.svg">
-          <img class="main-header__logo" src="./img/logo-mobile.svg" alt="Картинка логотипа Cat Energy">
+          <img class="main-header__logo" src="./img/logo-mobile.svg" alt="Картинка логотипа Cat Energy" width="33" height="38">
         </picture>
         <picture>
           <source media="(min-width: 1200px)" srcset="./img/logo_text_header.svg" width="118" height="auto">
           <source media="(min-width: 768px)" srcset="./img/logo_text_header.svg" width="101" height="auto">
-          <img class="main-header__logo main-header__logo--text" src="./img/logo_text_header.svg" alt="Текст логотипа Cat Energy">
+          <img class="main-header__logo main-header__logo--text" src="./img/logo_text_header.svg" alt="Текст логотипа Cat Energy" width="101" height="18">
         </picture>
       </a>
       <nav class="main-nav main-nav--nojs">
@@ -53,12 +53,12 @@
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="./img/promo-desktop.webp 1x, ./img/promo-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="./img/promo-tablet.webp 1x, ./img/promo-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/promo.webp 1x, ./img/promo@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="./img/promo-desktop.png 1x, ./img/promo-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="./img/promo-tablet.png 1x, ./img/promo-tablet@2x.png 2x">
-            <img class="promo__image" src="./img/promo.png" srcset="./img/promo.png 1x, ./img/promo@2x.png 2x" alt="Контейнер с питанием">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="./img/promo-desktop.webp 1x, ./img/promo-desktop@2x.webp 2x" width="552" height="499">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/promo-tablet.webp 1x, ./img/promo-tablet@2x.webp 2x" width="709" height="609">
+            <source type="image/webp" srcset="./img/promo.webp 1x, ./img/promo@2x.webp 2x" width="280" height="270">
+            <source media="(min-width: 1200px)" srcset="./img/promo-desktop.png 1x, ./img/promo-desktop@2x.png 2x" width="552" height="499">
+            <source media="(min-width: 768px)" srcset="./img/promo-tablet.png 1x, ./img/promo-tablet@2x.png 2x" width="709" height="609">
+            <img class="promo__image" src="./img/promo.png" srcset="./img/promo.png 1x, ./img/promo@2x.png 2x" alt="Контейнер с питанием" width="280" height="270">
           </picture>
         </div>
         <a class="promo__button button button--promo container" href="#">Подобрать программу</a>
@@ -110,11 +110,11 @@
           <div class="example__elements">
             <div class="example__result">
               <dl class="example__results">
-                <dt class="example__results-title">нижение&nsbp<br class="example__results-br"> веса</dt>
+                <dt class="example__results-title">снижение&nbsp<br class="example__results-br">веса</dt>
                 <dd class="example__results-description">5 КГ</dd>
               </dl>
               <dl class="example__results">
-                <dt class="example__results-title">затрачено <br class="example__results-br"> времени</dt>
+                <dt class="example__results-title">затрачено&nbsp<br class="example__results-br">времени</dt>
                 <dd class="example__results-description">60 дней</dd>
               </dl>
             </div>
@@ -125,13 +125,14 @@
           <div class="slider__wrapper slider__wrapper--before">
             <picture>
               <source type="image/webp" media="(min-width: 768px)" srcset="./img/cat-before-tablet@1x.webp 1x, ./img/cat-before-tablet@2x.webp 2x" width="560" height="512">
-              <source type="image/webp" srcset="./img/cat-before@1x.webp 1x, ./img/cat-mobile-before@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="./img/cat-before-tablet@1x.png 1x, ./img/cat-before-tablet@2x.png 2x">
-              <img class="slider__img slider__img--before" src="./img/cat-before@1x.png" srcset="./img/cat-before@1x.png 1x, ./img/cat-mobile-before@2x.png 2x" alt="Толстенький котик">
+              <source type="image/webp" srcset="./img/cat-before@1x.webp 1x, ./img/cat-mobile-before@2x.webp 2x" width="280" height="256">
+              <source media="(min-width: 768px)" srcset="./img/cat-before-tablet@1x.png 1x, ./img/cat-before-tablet@2x.png 2x" width="560" height="512">
+              <img class="slider__img slider__img--before" src="./img/cat-before@1x.png" srcset="./img/cat-before@1x.png 1x, ./img/cat-mobile-before@2x.png 2x" alt="Толстенький котик" width="280" height="256">
             </picture>
           </div>
           <div class="slider__buttons">
             <svg class="slider__button" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="currentColor">
+              <rect x="1" y="1" width="38" height="38" rx="19" fill="white"/>
               <path d="M16 11L8 20L16 29V11Z"/>
               <path d="M32 20L24 11V29L32 20Z"/>
             </svg>
@@ -139,9 +140,9 @@
           <div class="slider__wrapper slider__wrapper--after">
             <picture>
               <source type="image/webp" media="(min-width: 768px)" srcset="./img/cat-after-tablet@1x.webp 1x, ./img/cat-after-tablet@2x.webp 2x" width="560" height="512">
-              <source type="image/webp" srcset="./img/cat-after@1x.webp 1x, ./img/cat-after@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="./img/cat-after-tablet@1x.png 1x, ./img/cat-after-tablet@2x.png 2x">
-              <img class="slider__img slider__img--after" src="./img/cat-after@1x.png" srcset="./img/cat-after@1x.png 1x, ./img/cat-after@2x.png 2x" alt="Похудевший котик">
+              <source type="image/webp" srcset="./img/cat-after@1x.webp 1x, ./img/cat-after@2x.webp 2x" width="280" height="256">
+              <source media="(min-width: 768px)" srcset="./img/cat-after-tablet@1x.png 1x, ./img/cat-after-tablet@2x.png 2x" width="560" height="512">
+              <img class="slider__img slider__img--after" src="./img/cat-after@1x.png" srcset="./img/cat-after@1x.png 1x, ./img/cat-after@2x.png 2x" alt="Похудевший котик" width="280" height="256">
             </picture>
           </div>
         </div>
@@ -157,19 +158,19 @@
         <div class="contacts__map">
           <iframe class="contacts__map-online" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.2153490911187!2d30.320300815815674!3d59.938651982615674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1692796699457!5m2!1sru!2sru" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="./img/map-desktop.png 1x, ./img/map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="./img/map-tablet.png 1x, ./img/map-tablet@2x.png 2x">
-            <img class="contacts__map-offline" src="./img/map.png" srcset="./img/map.png 1x, ./img/map@2x.png 2x" alt="Мы на карте">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x" width="1440" height="400">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp 2x" width="768" height="400">
+            <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x" width="320" height="362">
+            <source media="(min-width: 1200px)" srcset="./img/map-desktop.png 1x, ./img/map-desktop@2x.png 2x" width="1440" height="400">
+            <source media="(min-width: 768px)" srcset="./img/map-tablet.png 1x, ./img/map-tablet@2x.png 2x" width="768" height="400">
+            <img class="contacts__map-offline" src="./img/map.png" srcset="./img/map.png 1x, ./img/map@2x.png 2x" alt="Мы на карте" width="320" height="362">
           </picture>
         </div>
       </section>
     </main>
     <footer class="main-footer">
       <a class="main-footer__logo logo logo--footer" href="#">
-        <img class="main-footer__logo-name" width="128" height="24" alt="Кот Энерджи" src="./img/logo_text__footer.svg">
+        <img class="main-footer__logo-name" width="128" height="24" alt="Кот Энерджи" src="./img/logo_text__footer.svg" width="128" height="24">
       </a>
       <div class="main-footer__social social">
         <ul class="social__list">
