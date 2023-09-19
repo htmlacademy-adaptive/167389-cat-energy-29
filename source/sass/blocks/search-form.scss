@@ -103,7 +103,7 @@
     outline: 2px solid #444444;
   }
 
-  &::disabled {
+  &:disabled {
     opacity: 0.5;
     cursor: none;
   }

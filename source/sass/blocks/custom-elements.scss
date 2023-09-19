@@ -1,9 +1,3 @@
-.custom-elements__radiobutton:disabled + .custom-elements__label,
-.custom-elements__checkbox:disabled + .custom-elements__label {
-  opacity: 0.3;
-  cursor: none;
-}
-
 .custom-elements--rbt {
   padding-top: 22px;
   padding-bottom: 18px;
@@ -91,6 +85,12 @@
   top: 2px;
   left: 2px;
   z-index: 5;
+}
+
+.custom-elements__radiobutton:disabled + .custom-elements__label,
+.custom-elements__checkbox:disabled + .custom-elements__label {
+  opacity: 0.3;
+  cursor: none;
 }
 
 @media (min-width: 768px) {
