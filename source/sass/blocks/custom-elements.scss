@@ -1,4 +1,5 @@
-.custom-elements__item:disabled {
+.custom-elements__radiobutton:disabled + .custom-elements__label,
+.custom-elements__checkbox:disabled + .custom-elements__label {
   opacity: 0.3;
   cursor: none;
 }
