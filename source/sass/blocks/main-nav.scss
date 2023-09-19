@@ -29,6 +29,15 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 @media (max-width: 767px) {
@@ -112,10 +121,6 @@
     line-height: 24px;
     padding: 8px 0 5px;
 
-    &:hover {
-      color: rgba(0, 0, 0, 1);
-    }
-
     &--active {
       border-bottom: 2px solid #68b738;
     }
@@ -134,8 +139,13 @@
     &--other {
       color: #ffffff;
 
-      &:hover {
-        color: rgba(255, 255, 255, 1);
+      &:hover,
+      &:focus {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
       }
     }
 

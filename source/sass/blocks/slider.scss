@@ -41,7 +41,7 @@
 
 .slider__buttons {
   position: relative;
-  width: 100%;
+  width: 0;
   height: auto;
   z-index: 20;
   color: #666666;
@@ -55,21 +55,23 @@
   position: absolute;
   content: "";
   top: 0;
-  right: -2px;
+  right: -142px;
   width: 4px;
   height: 256px;
-  background-color: currentColor;
+  background-color: #666666;
   z-index: 10;
+}
 
-  &:hover {
-    background-color: currentColor;
-  }
+.slider__buttons:hover::after {
+  background-color: #68b738;
 }
 
 .slider__button {
   position: absolute;
   top: 108px;
-  right: -22px;
+  right: -160px;
+  width: 36px;
+  height: 36px;
   z-index: 25;
   border: 2px solid currentColor;
   border-radius: 50%;
@@ -89,14 +91,14 @@
   }
 
   .slider__button {
-    top: 234px;
-    right: -162px;
+    top: 236px;
+    right: -300px;
   }
 
   .slider__buttons::after {
     height: 512px;
     top: 0;
-    right: -142px;
+    right: -282px;
   }
 }
 
