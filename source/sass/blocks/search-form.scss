@@ -122,8 +122,8 @@
   background-color: #68b738;
 }
 
-.search-form__item--email::before:has(.search-form__text:invalid),
-.search-form__item--phone::before:has(.search-form__text:invalid) {
+.search-form__item--email::before > .search-form__text:invalid,
+.search-form__item--phone::before > .search-form__text:invalid {
   background-color: #ff8282;
 }
 
@@ -235,7 +235,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1330px) {
   .search-form__group {
     padding: 0 70px;
   }
@@ -263,6 +263,7 @@
       gap: 80px;
       flex-direction: row;
       flex-wrap: nowrap;
+      justify-content: space-between;
     }
 
     .search-form__item {
