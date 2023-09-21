@@ -21,42 +21,47 @@
   font-family: "Lato", sans-serif;
   font-style: normal;
   line-height: 18px;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 20px;
+  position: relative;
+  min-height: 60px;
 }
 
 .work-plan__item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.work-plan__image {
+.work-plan__item::after {
   display: block;
+  top: -2px;
+  left: 0;
   width: 60px;
   height: 60px;
   background-color: #68b738;
   background-repeat: no-repeat;
   background-position: center;
-
-  &--sheet {
-    background-image: url("../img/icon_sheet.svg");
-  }
-
-  &--tube {
-    background-image: url("../img/icon_tube.svg");
-  }
-
-  &--eat {
-    background-image: url("../img/icon_eat.svg");
-  }
-
-  &--watch {
-    background-image: url("../img/icon_watch.svg");
-  }
+  content: "";
+  position: absolute;
 }
+
+.work-plan__item--sheet::after {
+  background-image: url("../img/icon_sheet.svg");
+}
+
+.work-plan__item--tube::after {
+  background-image: url("../img/icon_tube.svg");
+}
+
+.work-plan__item--eat::after {
+  background-image: url("../img/icon_eat.svg");
+}
+
+.work-plan__item--watch::after {
+  background-image: url("../img/icon_watch.svg");
+}
+
 
 .work-plan__text {
   margin: 0;
+  margin-left: 80px;
   color: #444444;
 }
 
@@ -65,6 +70,10 @@
 }
 
 @media (min-width: 768px) {
+  .work-plan {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
   .work-plan__title {
     font-size: 60px;
     line-height: 60px;
@@ -77,14 +86,11 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 37px 133px;
-    padding-bottom: 92px;
+    padding-bottom: 45px;
     padding-right: 75px;
   }
 
   .work-plan__item {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
     min-height: 280px;
     position: relative;
     counter-increment: number;
@@ -105,14 +111,16 @@
     margin-bottom: 0;
   }
 
-  .work-plan__image {
-    margin-top: 40px;
+  .work-plan__item::after {
+    margin-top: 42px;
     margin-bottom: 31px;
     width: 80px;
     height: 80px;
   }
 
   .work-plan__text {
+    margin: 0;
+    margin-top: 151px;
     margin-right: 2px;
     font-size: 16px;
     line-height: 24px;
@@ -123,7 +131,11 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1330px) {
+  .work-plan {
+    border-bottom: none;
+  }
+
   .work-plan__list {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;

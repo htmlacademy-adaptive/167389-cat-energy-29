@@ -14,19 +14,18 @@
   }
 
   .target__wrapper {
-    gap: 30px;
+    gap: 31px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1330px) {
   .target {
     padding: 82px 0 76px;
   }
 
   .target__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 80px;
   }
 }
