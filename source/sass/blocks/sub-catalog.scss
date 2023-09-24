@@ -14,6 +14,11 @@
   z-index: -20;
 }
 
+.sub-catalog__wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
 .sub-catalog__title {
   text-align: left;
   font-family: "Oswald", sans-serif;
@@ -24,7 +29,7 @@
   color: #000000;
   margin: 0;
   width: auto;
-  padding: 21px 20px 36px;
+  padding: 22px 20px 36px;
   position: relative;
   background-color: #ffffff;
 }
@@ -59,6 +64,10 @@
   padding-bottom: 13px;
 }
 
+.sub-catalog__item:last-child .sub-catalog__item-title {
+  padding-bottom: 10px;
+}
+
 .sub-catalog__details {
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -76,13 +85,14 @@
   margin: 35px 20px;
   background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/action-image.png");
   background-repeat: no-repeat;
+  background-size: cover;
   height: 290px;
 }
 
 @media (min-resolution: 2dppx) {
   .sub-catalog__action {
     background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/action-image@2x.png");
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -122,7 +132,7 @@
   }
 
   .sub-catalog__item {
-    padding: 26px 37px 28px;
+    padding: 25px 38px 28px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -132,6 +142,10 @@
   .sub-catalog__item-title {
     font-size: 20px;
     line-height: 20px;
+    padding-bottom: 0;
+  }
+
+  .sub-catalog__item:last-child .sub-catalog__item-title {
     padding-bottom: 0;
   }
 
@@ -145,10 +159,6 @@
   .sub-catalog__price {
     width: 91px;
     margin: 0;
-  }
-
-  .sub-catalog__volume {
-    padding-left: auto;
   }
 
   .sub-catalog__action {
@@ -186,7 +196,7 @@
   }
 }
 
-@media (min-width: 1330px) {
+@media (min-width: 1440px) {
   .sub-catalog {
     padding: 0 70px;
   }

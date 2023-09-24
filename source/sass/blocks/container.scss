@@ -1,5 +1,7 @@
 .container {
   padding: 0 20px;
+  max-width: 1220px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -8,7 +10,7 @@
   }
 }
 
-@media (min-width: 1330px) {
+@media (min-width: 1440px) {
   .container {
     padding: 0 110px;
   }

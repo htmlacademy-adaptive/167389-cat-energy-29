@@ -7,7 +7,7 @@
 
 .custom-elements--checkbox {
   padding-top: 34px;
-  padding-bottom: 34px;
+  padding-bottom: 32px;
 }
 
 .custom-elements__item {
@@ -66,12 +66,12 @@
 .custom-elements__checkbox + .custom-elements__label::before {
   position: absolute;
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   border: 1px solid #cdcdcd;
   background-color: #ffffff;
-  top: 0;
-  left: -2px;
+  top: 2px;
+  left: 0;
 }
 
 .custom-elements__checkbox:checked + .custom-elements__label::after {
@@ -82,7 +82,7 @@
   height: 26px;
   background-image: url("../img/tick.svg");
   background-color: #ffffff;
-  top: 2px;
+  top: 4px;
   left: 2px;
   z-index: 5;
 }
@@ -103,13 +103,14 @@
   .custom-elements__radiobutton + .custom-elements__label::before {
     width: 39px;
     height: 39px;
+    left: -1px;
   }
 
   .custom-elements__radiobutton:checked + .custom-elements__label::after {
     width: 18px;
     height: 18px;
     top: 11px;
-    left: 10px;
+    left: 11px;
   }
 
   .custom-elements__checkbox + .custom-elements__label::before {
@@ -130,20 +131,19 @@
 
   .custom-elements--rbt {
     padding: 23px 27px 27px;
-    margin: 72px 40px 65px;
+    margin: 47px 39px 65px;
     border: 1px solid #d9d9d9;
   }
 
   .custom-elements--checkbox {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px 80px;
-    padding: 57px 40px 52px;
-    padding-bottom: 60px;
+    gap: 32px 60px;
+    padding: 57px 0 53px;
   }
 }
 
-@media (min-width: 1330px) {
+@media (min-width: 1440px) {
   .custom-elements--rbt {
     flex-grow: 1;
     margin: 0;
@@ -155,5 +155,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0 80px;
+    padding-bottom: 60px;
   }
 }

@@ -4,21 +4,25 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  max-width: 1440px;
 }
 
 @media (min-width: 768px) {
   .catalog__list {
     margin: 0 auto;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 141px 60px;
-    padding: 0 30px 70px;
+    padding: 0 0 68px;
+    margin: 0 30px;
   }
 }
 
-@media (min-width: 1330px) {
+@media (min-width: 1440px) {
   .catalog__list {
-    padding: 0 110px 75px;
-    gap: 144px 80px;
+    margin: 0 110px;
+    padding: 0 0 75px;
+    gap: 145px 80px;
   }
 }
