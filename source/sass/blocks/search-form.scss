@@ -138,10 +138,10 @@
       mask-image: url("../img/sprite.svg#icon-phone");
       background-color: #000000;
     }
-} 
+}
 
 .search-form__text:invalid:not(:placeholder-shown) + .search-form__icon--email,
-.search-form__text:invalid:not(:placeholder-shown) + .search-form__icon--phone { 
+.search-form__text:invalid:not(:placeholder-shown) + .search-form__icon--phone {
   background-color: #ff8282;
 }
 
