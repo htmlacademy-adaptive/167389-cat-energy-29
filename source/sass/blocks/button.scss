@@ -42,7 +42,7 @@
 
 .button--catalog {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 17px;
   font-size: 16px;
 }
 
@@ -59,9 +59,13 @@
 
 .button--subcatalog {
   width: 100%;
-  margin-top: 12px;
+  margin-top: 14px;
   font-size: 16px;
   line-height: 20px;
+}
+
+.sub-catalog__item:last-child .button--subcatalog {
+  margin-top: 17px;
 }
 
 @media (min-width: 768px) {
@@ -96,16 +100,20 @@
     line-height: 26px;
     min-height: 54px;
   }
+
+  .sub-catalog__item:last-child .button--subcatalog {
+    margin-top: 23px;
+  }
 }
 
-@media (min-width: 1330px) {
+@media (min-width: 1440px) {
   .button--promo {
     margin-left: 190px;
     margin-bottom: 185px;
   }
 
   .button--catalog {
-    margin-top: 35px;
+    margin-top: 34px;
   }
 
   .button--empty {
@@ -116,6 +124,10 @@
     width: 244px;
     margin: 0;
     margin-left: 20px;
+  }
+
+  .sub-catalog__item:last-child .button--subcatalog {
+    margin-top: -1px;
   }
 
   .button--search-form {

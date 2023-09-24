@@ -173,7 +173,7 @@
   }
 }
 
-@media (min-width: 1330px) {
+@media (min-width: 1440px) {
   .example {
     flex-direction: row;
     padding: 0 110px 75px;
@@ -192,6 +192,7 @@
   }
 
   .example__title {
+    padding-top: 0;
     padding-bottom: 146px;
   }
 
