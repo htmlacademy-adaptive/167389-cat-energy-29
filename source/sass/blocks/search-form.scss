@@ -1,6 +1,6 @@
 .search-form__group {
   border: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   position: relative;
   box-sizing: border-box;
@@ -31,9 +31,8 @@
 
 .search-form__list {
   list-style: none;
-  padding: 0;
-  margin: 0 20px;
-  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
   box-sizing: border-box;
 
   &--cat {
@@ -165,8 +164,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 32px;
-  margin: 0 20px;
+  padding: 0 20px 32px;
+  margin: 0 auto;
 }
 
 .search-form__footnote {
@@ -210,7 +209,8 @@
   }
 
   .search-form__list {
-    margin: 0 40px;
+    padding: 0 40px;
+    margin: 0 auto;
 
     &--human {
       padding-top: 76px;
@@ -242,8 +242,8 @@
   }
 
   .search-form__button-wrapper {
-    padding: 0 0 58px;
-    margin: 0 70px;
+    padding: 0 70px 58px;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
@@ -251,7 +251,7 @@
 
   .search-form__footnote {
     padding: 0;
-    padding-bottom: 4px;
+    padding-bottom: 6px;
   }
 }
 
@@ -265,13 +265,14 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    margin: 0 110px 70px;
-    padding: 0;
+    padding: 0 110px 70px;
+    margin: 0 auto;
     gap: 80px;
   }
 
   .search-form__list {
-    margin: 0 40px;
+    padding: 0 40px;
+    margin: 0 auto;
 
     &--cat {
       padding: 0;
@@ -324,6 +325,7 @@
   }
 
   .search-form__button-wrapper {
-    margin: 0 110px 19px;
+    padding: 0 110px 79px;
+    margin: 0 auto;
   }
 }
