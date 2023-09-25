@@ -1,4 +1,4 @@
-.main-header {
+.main-header__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -23,7 +23,7 @@
 }
 
 @media (min-width: 768px) {
-  .main-header {
+  .main-header__container {
     align-items: center;
     padding: 25px 34px 25px 30px;
   }

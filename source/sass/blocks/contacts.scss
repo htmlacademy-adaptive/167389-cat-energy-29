@@ -51,7 +51,7 @@
   display: none;
 }
 
-.contacts__map::before {
+.contacts__map-offline::before {
   content: "";
   width: 56px;
   height: 52px;
@@ -63,7 +63,7 @@
 }
 
 @media (min-resolution: 2dppx) {
-  .contacts__map::before {
+  .contacts__map-offline::before {
     background-image: url("../img/map-pin-mobile@2x.png");
     background-size: 57px 53px;
   }
@@ -111,7 +111,7 @@
     height: 400px;
   }
 
-  .contacts__map::before {
+  .contacts__map-ofline::before {
     content: "";
     width: 113px;
     height: 106px;
@@ -132,7 +132,7 @@
 }
 
 @media (min-width: 1440px) {
-  .contacts {
+  .contacts__container {
     position: relative;
   }
 
