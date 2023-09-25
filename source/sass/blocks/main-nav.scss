@@ -105,6 +105,12 @@
     width: auto;
   }
 
+  .main-nav__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .main-nav__list {
     display: flex;
     flex-direction: row;

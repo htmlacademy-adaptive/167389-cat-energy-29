@@ -4,6 +4,18 @@
   max-width: 1220px;
 }
 
+.container-other {
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 20px;
+}
+
+@media (max-width: 767px) {
+  .main-header .container {
+    padding: 0;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     padding: 0 30px;
