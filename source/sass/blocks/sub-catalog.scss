@@ -29,14 +29,14 @@
   margin: 0;
   width: auto;
   padding: 22px 20px 36px;
-  position: relative;
+  position: absolute;
   background-color: #ffffff;
 }
 
 .sub-catalog__list {
   list-style: none;
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
   display: flex;
   flex-direction: column;
 }
@@ -114,13 +114,14 @@
 
 @media (min-width: 768px) {
   .sub-catalog {
-    padding: 0 30px;
+    padding: 0;
   }
 
   .sub-catalog__title {
     font-size: 36px;
     line-height: 36px;
-    padding: 0 40px 80px;
+    padding: 0 40px;
+    top: 0;
     width: 340px;
   }
 
@@ -196,23 +197,19 @@
 }
 
 @media (min-width: 1440px) {
-  .sub-catalog {
-    padding: 0 70px;
-  }
-
   .sub-catalog__wrapper {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 87px;
-    padding-right: 39px;
+    padding-top: 92.5px;
   }
 
   .sub-catalog__list {
-    padding: 0 40px;
     border: none;
     min-width: 895px;
+    padding: 0 40px;
   }
 
   .sub-catalog__item {
@@ -239,7 +236,7 @@
     background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/action-image-desktop.png");
     height: auto;
     flex-direction: column;
-    margin: 0;
+    margin: 0 40px;
     padding: 56px 0 43px;
     align-self: center;
     width: 245px;

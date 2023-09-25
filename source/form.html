@@ -47,10 +47,10 @@
       </div>
     </header>
     <main class="main-form">
-      <h1 class="main-form__title">Подбор программы</h1>
+      <h1 class="main-form__title container">Подбор программы</h1>
       <p class="main-form__text container">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
       <form class="main-form__search-form search-form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="search-form__group search-form__group--cat">
+        <fieldset class="search-form__group search-form__group--cat container">
           <h2 class="visually-hidden">Информация о коте</h2>
           <ul class="search-form__list search-form__list--cat">
             <li class="search-form__item search-form__item--cat">
@@ -81,50 +81,55 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="search-form__group">
-          <legend class="search-form__title">Контактные данные&nbsp;<br class="search-form__title-br">(владельца кота)</legend>
-          <ul class="search-form__list search-form__list--human">
-            <li class="search-form__item search-form__item--human search-form__item--email">
-              <label class="search-form__label" for="search-form__email">E-mail:*</label>
-              <input class="search-form__text search-form__text-email" id="search-form__email" type="email" placeholder="kuklachev@gmail.com" required>
-              <span class="search-form__icon search-form__icon--email"></span>
-            </li>
-            <li class="search-form__item search-form__item--human search-form__item--phone">
-              <label class="search-form__label" for="search-form__phone">Телефон:*</label>
-              <input class="search-form__text search-form__text-phone" id="search-form__phone" type="tel" placeholder="8 (960) 900-60-90" pattern="[0-9]{11}" required>
-              <span class="search-form__icon search-form__icon--phone"></span>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="search-form__group">
-          <legend class="search-form__title">Комментарий</legend>
-          <div class="search-form__comment">
-            <textarea class="search-form__textarea" placeholder="Расскажите обо всех повадках кота" name=comment></textarea>
-          </div>
-        </fieldset>
-        <fieldset class="search-form__group">
-          <legend class="search-form__title">Дополнительно</legend>
-          <ul class="search-form__list search-form__elements custom-elements--checkbox">
-            <li class="custom-elements__item">
-              <input class="custom-elements__checkbox" id="sweetener" name="ingredients" value="sweetener" type="checkbox"
-                checked>
+        <div class="search-form__group search-form__group--other">
+          <fieldset class="search-form__group-wrapper container-other">
+            <legend class="search-form__title">Контактные данные&nbsp;<br class="search-form__title-br">(владельца кота)</legend>
+            <ul class="search-form__list search-form__list--human">
+              <li class="search-form__item search-form__item--human search-form__item--email">
+                <label class="search-form__label" for="search-form__email">E-mail:*</label>
+                <input class="search-form__text search-form__text-email" id="search-form__email" type="email" placeholder="kuklachev@gmail.com" required>
+                <span class="search-form__icon search-form__icon--email"></span>
+              </li>
+              <li class="search-form__item search-form__item--human search-form__item--phone">
+                <label class="search-form__label" for="search-form__phone">Телефон:*</label>
+                <input class="search-form__text search-form__text-phone" id="search-form__phone" type="tel" placeholder="8 (960) 900-60-90" pattern="[0-9]{11}" required>
+                <span class="search-form__icon search-form__icon--phone"></span>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="search-form__group search-form__group--other">
+          <fieldset class="search-form__group-wrapper container-other">
+            <legend class="search-form__title">Комментарий</legend>
+            <div class="search-form__comment">
+              <textarea class="search-form__textarea" placeholder="Расскажите обо всех повадках кота" name=comment></textarea>
+            </div>
+          </fieldset>
+        </div>
+        <div class="search-form__group search-form__group--other">
+          <fieldset class="search-form__group-wrapper container-other">
+            <legend class="search-form__title">Дополнительно</legend>
+            <ul class="search-form__list search-form__elements custom-elements--checkbox">
+              <li class="custom-elements__item">
+                <input class="custom-elements__checkbox" id="sweetener" name="ingredients" value="sweetener" type="checkbox" checked>
               <label class="custom-elements__label" for="sweetener">Сахарозаменитель</label>
-            </li>
-            <li class="custom-elements__item">
-              <input class="custom-elements__checkbox" id="water" name="ingredients" value="water" type="checkbox">
-              <label class="custom-elements__label" for="water">Питьевая вода</label>
-            </li>
-            <li class="custom-elements__item">
-              <input class="custom-elements__checkbox" id="milk" name="ingredients" value="milk" type="checkbox">
-              <label class="custom-elements__label" for="milk">Молоко</label>
-            </li>
-            <li class="custom-elements__item">
-              <input class="custom-elements__checkbox" id="vitamins" name="ingredients" value="vitamins" type="checkbox">
-              <label class="custom-elements__label" for="vitamins">Витамины</label>
-            </li>
-          </ul>
-        </fieldset>
-        <div class="search-form__button-wrapper">
+              </li>
+              <li class="custom-elements__item">
+                <input class="custom-elements__checkbox" id="water" name="ingredients" value="water" type="checkbox">
+                <label class="custom-elements__label" for="water">Питьевая вода</label>
+              </li>
+              <li class="custom-elements__item">
+                <input class="custom-elements__checkbox" id="milk" name="ingredients" value="milk" type="checkbox">
+                <label class="custom-elements__label" for="milk">Молоко</label>
+              </li>
+              <li class="custom-elements__item">
+                <input class="custom-elements__checkbox" id="vitamins" name="ingredients" value="vitamins" type="checkbox">
+                <label class="custom-elements__label" for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="search-form__button-wrapper container">
           <button class="search-form__button button button--search-form" type="submit">Отправить заявку</button>
           <p class="search-form__footnote">* —Обязательные поля</p>
         </div>

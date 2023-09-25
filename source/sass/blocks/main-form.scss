@@ -6,7 +6,8 @@
   font-weight: 400;
   line-height: 36px;
   margin: 0 auto;
-  padding: 27px 20px 37px;
+  padding-top: 27px;
+  padding-bottom: 37px;
 }
 
 .main-form__text {
@@ -22,7 +23,7 @@
   .main-form__title {
     font-size: 60px;
     line-height: 60px;
-    padding: 35px 70px 54px;
+    padding: 32px 70px 54px;
   }
 
   .main-form__text {
@@ -35,7 +36,6 @@
 @media (min-width: 1440px) {
   .main-form__title {
     padding-top: 37px;
-    padding-left: 110px;
     padding-bottom: 54px;
   }
 
